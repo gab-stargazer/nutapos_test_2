@@ -1,0 +1,15 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NutaposTest2" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:colorPrimary">@color/primary_green</item>
+        <item name="android:actionMenuTextColor">@color/primary_green</item>
+    </style>
+
+    <style name="Theme.NutaposTest2" parent="Base.Theme.NutaposTest2" />
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorSurface">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/UangMasukFragment">
+
+    <fragment
+        android:id="@+id/UangMasukFragment"
+        android:name="com.lelestacia.nutapostest2.ui.uang_masuk.UangMasukFragment"
+        android:label="@string/uang_masuk"
+        tools:layout="@layout/fragment_uang_masuk">
+        <action
+            android:id="@+id/action_UangMasukFragment_to_TambahTransaksiFragment"
+            app:destination="@id/TambahTransaksiFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/TambahTransaksiFragment"
+        android:name="com.lelestacia.nutapostest2.ui.tambah_transaksi.TambahTransaksiFragment"
+        android:label="@string/uang_masuk"
+        tools:layout="@layout/fragment_tambah_transaksi">
+
+    </fragment>
+</navigation>

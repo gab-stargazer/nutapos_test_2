@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.uang_masuk.UangMasukFragment">
+
+    <TextView
+        android:id="@+id/tv_selection_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="@color/primary_green"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_select_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="25 Maret 2022 - 25 Maret 2022" />
+
+    <Button
+        android:id="@+id/btn_select_date"
+        style="?attr/materialIconButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:drawableTint="@color/primary_green"
+        app:icon="@drawable/ic_selection_date"
+        app:iconTint="@color/primary_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/primary_green" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/materialDivider"
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_date"
+        tools:itemCount="1"
+        tools:layout_editor_absoluteX="-7dp"
+        tools:listitem="@layout/item_group_transaction" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerColor="@android:color/darker_gray"
+        app:dividerThickness="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_transaction" />
+
+    <TextView
+        android:id="@+id/btn_add_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="16dp"
+        android:text="@string/btn_add_transaction"
+        android:textAlignment="center"
+        android:textColor="@color/primary_green"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
